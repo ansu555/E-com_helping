@@ -1,43 +1,51 @@
-.shopcategory-product {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto arrange in columns */
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  .shopcategory-product img {
-    width: 100%;  /* Ensure the image takes full width of its container */
-    height: 200px; /* Set a fixed height */
-    object-fit: cover; /* Crop the image to fit the container */
-    border-radius: 8px; /* Optional: add rounded corners */
-  }
-  
-  .item {
-    background-color: #fff;
-    padding: 10px; /* Added padding */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Added gap to separate image and text */
-    margin-bottom: 20px; /* Additional margin to prevent overlap */
-  }
-  
-  .item-details {
+/* Banner Styling */
+.shop-banner-container {
+    width: 100%;
     text-align: center;
-    margin-top: 10px;
-    padding-bottom: 10px; /* Additional padding to ensure text spacing */
+    margin-bottom: 20px;
   }
   
-  .old-price {
-    text-decoration: line-through;
-    color: #888;
+  .banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: fill;
+    border-radius: 10px;
   }
   
-  .new-price {
+  /* Product Grid */
+  .shopcategory-product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  /* No Products Message */
+  .no-products {
     font-size: 18px;
-    font-weight: bold;
-    color: #333;
+    color: #555;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Sort Section */
+  .shopcategory-indexsort {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .shopcategory-sort {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .shopcategory-sort img {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
   }
   
